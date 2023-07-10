@@ -1,0 +1,23 @@
+<div class="mt-4">
+    <div class="row">
+
+        {{#each courses}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card card-course-item">
+                <a href="/tin-chuyen-nhuong-MU/{{slug}}" class="">
+                    <div class="thumbnail">
+                         <img class="card-img-top" src="{{this.image}}" alt="{{this.name}}">
+                    </div>
+                </a>
+                <div class="card-body">
+                    <a href="/tin-chuyen-nhuong-MU/{{slug}}" class="">
+                    <h5 class="card-title">{{this.name}}</h5>
+                    </a>
+                    <p class="card-text">{{this.description}}</p>
+                    <a href="/tin-chuyen-nhuong-MU/{{slug}}" class="btn btn-primary">ĐỌC TIN</a>
+                </div>
+        </div>  
+    </div>
+        {{/each}}
+    </div>
+</div>
